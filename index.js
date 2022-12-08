@@ -1,5 +1,23 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let i = 0; i < array.length; i++){
+    const neededValue = target - array[i]
+    const num2 = target -neededValue
+    for (let j = i + 1; j < array; j++){
+      if(num2 === j ){
+        return true
+      }else if(num2 != j){
+        return false
+      }else{
+        return false
+      }
+    }
+    if (num2 + neededValue === target){
+      return true
+    }else if(num2 + neededValue != target){
+      return false
+    }
+  }
 }
 
 /* 
